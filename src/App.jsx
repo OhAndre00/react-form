@@ -1,10 +1,4 @@
-import Colors from "./Colors";
 import FocusableInput from "./FocusableInput";
-import InteractiveWelcome from "./InteractiveWelcome";
-import Login from "./Login";
-import MountedComponent from "./MountedComponent";
-import ToDoList from "./ToDoList";
-import UncontrolledLogin from "./UncontrolledLogin";
 
 function App() {
   const handleLogin = (state) => {
@@ -30,27 +24,23 @@ function App() {
     //   </div>
     // ),
     // (
+    <div className="flex flex-col justify-center items-center h-screen">
+      <h2 className="font-bold text-center">Focus:</h2>
+      <FocusableInput />
+    </div>
+    // ),
+
+    // (
     //   <div>
-    //     <FocusableInput />
+    //     <h1 className="font-bold text-2xl">Color List</h1>
+    //     <Colors colors={colorList} />
     //   </div>
     // ),
     // (
     //   <div>
-    //     <MountedComponent />
+    //     <ToDoList />
     //   </div>
     // )
-
-    (
-      <div>
-        <h1 className="font-bold text-2xl">Color List</h1>
-        <Colors colors={colorList} />
-      </div>
-    ),
-    (
-      <div>
-        <ToDoList />
-      </div>
-    )
   );
 }
 
