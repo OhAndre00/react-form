@@ -1,4 +1,6 @@
 import FocusableInput from "./FocusableInput";
+import Colors from "./Colors";
+import ToDoList from "./ToDoList";
 
 function App() {
   const handleLogin = (state) => {
@@ -24,23 +26,20 @@ function App() {
     //   </div>
     // ),
     // (
-    <div className="flex flex-col justify-center items-center h-screen">
-      <h2 className="font-bold text-center">Focus:</h2>
-      <FocusableInput />
-    </div>
+    // <div className="flex flex-col justify-center items-center h-screen">
+    //   <h2 className="font-bold text-center">Focus:</h2>
+    //   <FocusableInput />
+    // </div>
     // ),
 
-    // (
-    //   <div>
-    //     <h1 className="font-bold text-2xl">Color List</h1>
-    //     <Colors colors={colorList} />
-    //   </div>
-    // ),
-    // (
-    //   <div>
-    //     <ToDoList />
-    //   </div>
-    // )
+    <div>
+      <h1 className="font-bold text-2xl">Color List</h1>
+      <Colors colors={colorList} />
+    </div>
+
+    // <div>
+    //   <ToDoList />
+    // </div>
   );
 }
 
